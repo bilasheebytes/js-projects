@@ -1,0 +1,94 @@
+main {
+  height: 100vh;
+  text-align: center;
+}
+
+.headline {
+  font-size: 38px;
+  color: var(--pulm);
+  margin: 0;
+}
+
+.divider {
+  width: 78px;
+  height: 0.25rem;
+  border: none;
+  margin-inline: auto;
+  background: var(--coral);
+}
+
+.card {
+  max-width: 620px;
+  padding: 24px 32px;
+  margin: 64px 18px 0;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-wrapper {
+  position: relative;
+  background: var(--coral);
+  border-radius: 50%;
+}
+
+.image-wrapper::before {
+  content: url("./quote.svg");
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  padding: 6px;
+  background: var(--coral);
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.image-wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  translate: -5% 3%;
+}
+
+.author {
+  color: var(--pulm);
+  margin-block: 24px 8px;
+}
+
+.role {
+  font-size: 14px;
+  color: var(--coral);
+  text-transform: uppercase;
+  margin-block: 0;
+}
+
+.info {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--grey);
+  margin-block: 12px;
+}
+
+.button-group .button {
+  border: 0;
+  font-size: 20px;
+  color: var(--coral);
+}
+
+.button-group .button:hover {
+  color: var(--pulm);
+}
+
+.surprise {
+  font-size: 12px;
+  color: var(--coral);
+  padding: 8px 14px;
+  margin-block-start: 14px;
+  border: 2px solid var(--coral);
+}
+
+.surprise:hover {
+  color: var(--white);
+  background: var(--coral);
+}

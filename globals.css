@@ -3,6 +3,7 @@
 :root {
   --black: hsl(0, 0%, 13%);
   --white: hsl(0, 0%, 100%);
+  --grey: hsl(210, 22%, 49%);
   --pulm: hsl(294, 11%, 33%);
   --coral: hsl(356, 74%, 74%);
   --slate: hsl(210, 40%, 98%);
