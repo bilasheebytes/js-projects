@@ -1,0 +1,108 @@
+.toggle {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: var(--coral);
+  transition: var(--transition);
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.toggle:hover {
+  color: var(--pulm);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 1rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  transform: translate(-100%);
+  transition: var(--transition);
+}
+
+.sidebar.show {
+  transform: translate(0);
+}
+
+.header {
+  padding: 1.5rem;
+}
+
+.logo {
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: var(--pulm);
+}
+
+.logo span {
+  color: var(--coral);
+}
+
+.close {
+  font-size: 1.5rem;
+  color: var(--red);
+  transition: var(--transition);
+}
+
+.close:hover {
+  opacity: 0.75;
+}
+
+.links a {
+  display: block;
+  padding: 1.25rem;
+  font-size: 1.375rem;
+  color: var(--grey);
+  transition: var(--transition);
+}
+
+.links a:hover {
+  color: var(--white);
+  background: var(--coral);
+  padding-inline-start: 1.75rem;
+}
+
+.socials {
+  padding-block-end: 2rem;
+}
+
+.socials a {
+  font-size: 1.5rem;
+  color: var(--coral);
+  transition: var(--transition);
+}
+
+.socials a:not(:last-child) {
+  margin-inline-end: 0.75rem;
+}
+
+.socials a:hover {
+  color: var(--pulm);
+}
+
+@media (min-width: 42.25em) {
+  .sidebar {
+    width: 25rem;
+  }
+}
