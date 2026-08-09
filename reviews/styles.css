@@ -9,14 +9,6 @@ main {
   margin: 0;
 }
 
-.divider {
-  width: 78px;
-  height: 0.25rem;
-  border: none;
-  margin-inline: auto;
-  background: var(--coral);
-}
-
 .card {
   max-width: 620px;
   padding: 24px 32px;
