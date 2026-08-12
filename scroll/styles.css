@@ -1,0 +1,127 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background: var(--white);
+}
+
+.header.fixed {
+  position: fixed;
+  border-bottom: 1px solid var(--pulm);
+}
+
+.navbar {
+  max-width: 75rem;
+  padding: 1.25rem;
+  margin: auto;
+}
+
+.navbar a {
+  transition: color 150ms ease-in-out;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--pulm);
+}
+
+.links a {
+  color: var(--black);
+}
+
+.links a:not(:last-child) {
+  margin-inline-end: 2.25rem;
+}
+
+.logo span,
+h2 span,
+.links a:hover {
+  color: var(--coral);
+}
+
+section:not(#home) {
+  min-height: 30rem;
+  padding-block-start: 3rem;
+}
+
+#home {
+  min-height: calc(100vh - 4.3125rem);
+  background:
+    linear-gradient(rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.85)),
+    url("./images/banner.png") center/cover no-repeat;
+}
+
+#home .container {
+  max-width: 35.625rem;
+  color: var(--white);
+}
+
+#home p {
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  margin-block: 0.5rem 1.25rem;
+}
+
+#home .button {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  padding: 0.625rem 1.125rem;
+  border: 1px solid var(--white);
+  border-radius: 0;
+}
+
+#home .button:hover {
+  color: var(--coral);
+  background: var(--white);
+}
+
+#about,
+#featured {
+  background: var(--white);
+}
+
+.footer {
+  min-height: 10rem;
+  color: var(--white);
+  background: var(--pulm);
+}
+
+.scroll {
+  display: none;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.25rem;
+  color: var(--white);
+  padding: 0.5rem 0.625rem;
+  background: var(--coral);
+  border: none;
+}
+
+.scroll.show {
+  display: block;
+}
